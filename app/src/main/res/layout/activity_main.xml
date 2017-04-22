@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:background="#000"
+    android:orientation="vertical"
+    tools:context="com.drbt.earthquakesafetyapp.MainActivity">
+
+
+
+    <RelativeLayout
+        android:layout_alignParentTop="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="7dp"
+        android:layout_marginRight="7dp"
+        android:background="@drawable/banner_md"
+        android:layout_marginBottom="20dp">
+
+    </RelativeLayout>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#00CA74"
+        android:text="Precaution methods"
+        android:textColor="#fff"
+        android:layout_above="@+id/saveMeBtn"
+        android:layout_marginBottom="10dp"
+        android:id="@+id/preventionBtn"
+        android:layout_margin="@dimen/activity_horizontal_margin"
+        />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#00CA74"
+        android:text="Save me mode"
+        android:textColor="#fff"
+        android:layout_centerVertical="true"
+        android:id="@+id/saveMeBtn"
+        android:layout_margin="@dimen/activity_horizontal_margin"
+        android:onClick="saveMe"/>
+
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#028482"
+        android:text="Sign In"
+        android:layout_marginTop="10dp"
+        android:textColor="#fff"
+        android:layout_alignParentBottom="true"
+        android:id="@+id/regBtn"
+        android:onClick="signIn"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="You are currently Offline"
+        android:textColor="#ccc"
+        android:textStyle="bold"
+        android:layout_centerHorizontal="true"
+        android:textAlignment="center"
+        android:layout_above="@id/regBtn"
+        android:textSize="20dp"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#00CA74"
+        android:layout_marginRight="16dp"
+        android:text="notify me"
+        android:layout_marginTop="16dp"
+        android:textColor="#fff"
+        android:id="@+id/notifyBtn"
+        android:onClick="notifyMe"
+        android:layout_below="@+id/saveMeBtn"
+        android:layout_alignLeft="@+id/saveMeBtn"
+        android:layout_alignStart="@+id/saveMeBtn" />
+
+
+</RelativeLayout>

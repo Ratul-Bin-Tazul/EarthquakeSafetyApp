@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff"
+    android:theme="@style/SplashTheme"
+    android:id="@+id/rlParent">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/splash_logo"
+        android:id="@+id/logo"
+        android:padding="20dp"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:layout_below="@+id/logo"
+        android:textColor="#000"
+        android:id="@+id/appName"
+        android:layout_margin="15dp"
+        android:textSize="20dp"
+        android:text="Be Safe"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:layout_below="@+id/appName"
+        android:textColor="#000"
+        android:id="@+id/app"
+        android:layout_margin="15dp"
+        android:textSize="16dp"
+        android:text="Earthquake Safety App" />
+
+</RelativeLayout>

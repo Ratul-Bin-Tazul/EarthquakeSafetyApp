@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_moving_vehicle"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:background="#111"
+    tools:context="com.drbt.earthquakesafetyapp.movingVehicle">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+
+            <TextView
+                style="@style/txtColor"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="3. In a Moving vehicle"
+                android:textSize="24dp"
+                android:id="@+id/text1"/>
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#00CA74"
+                android:text="See video tutorial"
+                android:textColor="#fff"
+                android:layout_above="@+id/saveMeBtn"
+                android:layout_marginBottom="10dp"
+                android:id="@+id/video"
+                android:layout_margin="@dimen/activity_horizontal_margin"
+                android:layout_below="@+id/text1"
+                />
+
+            <TextView
+                style="@style/txtColor"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="- Stop quickly and stay in the vehicle."
+                android:textSize="18dp"
+                android:layout_below="@+id/video"
+                android:layout_marginTop="7dp"
+                android:layout_marginBottom="7dp"
+                android:id="@+id/textView" />
+
+            <TextView
+                style="@style/txtColor"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="- Move to a clear area away from buildings, trees, overpasses, or utility wires."
+                android:textSize="18dp"
+                android:layout_below="@+id/video"
+                android:layout_marginTop="7dp"
+                android:layout_marginBottom="7dp"/>
+
+
+
+            <TextView
+                style="@style/txtColor"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="- Once the shaking has stopped, proceed with caution. Avoid bridges or ramps that might have been damaged by the quake."
+                android:textSize="18dp"
+                android:layout_below="@+id/video"
+                android:layout_marginTop="7dp"
+                android:layout_marginBottom="7dp"
+                android:id="@+id/textView2" />
+
+
+
+
+
+
+
+
+
+
+
+        </LinearLayout>
+    </ScrollView>
+
+
+</RelativeLayout>

@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_before"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:background="#111"
+    tools:context="com.drbt.earthquakesafetyapp.beforeActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center">
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_vertical"
+                android:orientation="vertical"
+                >
+
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#00CA74"
+                    android:text="Check for hazards in the home"
+                    android:textColor="#fff"
+                    android:layout_above="@+id/safePlaces"
+                    android:id="@+id/checkHazard"
+                    android:layout_margin="10dp"
+                    android:onClick="checkforHazard"/>
+
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#00CA74"
+                    android:text="Identify safe places in each room"
+                    android:textColor="#fff"
+                    android:layout_above="@+id/safeOutdoor"
+                    android:id="@+id/safePlaces"
+                    android:layout_margin="10dp"
+                    android:onClick="identifySafePlace"/>
+
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#00CA74"
+                    android:text="Locate safe places outdoors"
+                    android:textColor="#fff"
+                    android:id="@+id/safeOutdoor"
+                    android:layout_margin="10dp"
+                    android:paddingLeft="5dp"
+                    android:paddingRight="5dp"
+                    android:onClick="locateSafePlace"
+                    />
+
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#00CA74"
+                    android:text="Make sure all family members know how to respond after an earthquake."
+                    android:textColor="#fff"
+                    android:padding="7dp"
+                    android:layout_margin="10dp"
+                    android:id="@+id/familyMember"
+                    android:onClick="makeFamilyAware"/>
+
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#00CA74"
+                    android:text="Contact local emergency management office"
+                    android:textColor="#fff"
+                    android:paddingLeft="7dp"
+                    android:paddingRight="7dp"
+                    android:layout_margin="10dp"
+                    android:id="@+id/localManagment"
+                    android:onClick="contactLocalAuthority"/>
+
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#00CA74"
+                    android:text="Have disaster supplies on hand."
+                    android:textColor="#fff"
+                    android:id="@+id/supplies"
+
+                    android:layout_margin="10dp"
+                    android:onClick="safetyKit"/>
+
+
+            </LinearLayout>
+
+
+        </RelativeLayout>
+    </ScrollView>
+
+</RelativeLayout>
